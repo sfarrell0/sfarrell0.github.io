@@ -21,82 +21,18 @@
   }
   
   * {
-    color: var(--nord0);
+    color: black;
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    background-color: var(--nord2);
-    opacity: 0.95;
-    height: 4em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .nav-links {
-    align-self: center;
-    display: flex;
-    margin-right: 1rem;
-    font-size: 24px;
-  }
-  
-  .nav-link {
-    color: var(--nord6);
-    padding: 2rem;
-    font-weight: 600;
-  }
-  
-  
-  #edu-link:hover {
-    color: var(--nord7);
-  }
-  
-  #about-link:hover {
-    color: var(--nord8);
-  }
-  
-  #project-link:hover {
-    color: var(--nord9);
-  }
-  
-  #home-link:hover {
-    color: var(--nord10);
-  }
-  
-  /*About page*/
-  
-  h1 {
-    color: var(--nord0);
-  }
-  
-  h2 {
-    color: var(--nord1);
-  }
-  
-  h3 {
-    color: var(--nord2);
-  }
-  
-  h4 {
-    color: var(--nord3);
-  }
-  
-  p {
-    color: var(--nord3);
-    margin-left: 1.5rem;
-  }
+
   
   .about__container {
     display: flex;
     justify-content: space-between;
-    background-color: var(--nord4);
+    background-color: var(--light1);
     margin: auto;
     margin-top: 80px;
     border-radius: 8px;
@@ -113,6 +49,7 @@
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;
+    text-align: center;
   }
   .interests {
     padding-left: 2rem;
@@ -138,13 +75,10 @@
   
   .utah {
     font-weight: bold;
+    text-decoration: underline;
     color: var(--uofu);
   }
   
-  .bold_text2 {
-    font-weight: 800;
-    color: var(--high2);
-  }
   
   .media_links {
     display: flex;
@@ -185,7 +119,7 @@
     margin: auto;
     margin-top: 20px;
     border-radius: 8px;
-    background-color: var(--nord4);
+    background-color: var(--light1);
     width: 95%;
     padding: 1rem;
   }
@@ -201,23 +135,6 @@
     display: flex;
     padding: 1rem;
   }
-  
-  
-  
-  /* .skill-list {
-    -webkit-column-count: 2; /* Chrome/Opera, Safari */
-    -moz-column-count: 2; /* Mozilla Firefox */
-    column-count: 2;
-  
-    /* Properties below are optional: */
-    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
-    -moz-column-gap: 50px; /* Mozilla Firefox */
-    column-gap: 50px;
-  
-    -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
-    -moz-column-rule: 1px single grey; /* Mozilla Firefox */
-    column-rule: 1px single grey;
-  } */
   
   .skill-list li {
     font-weight: 700;
@@ -247,14 +164,45 @@
     cursor: pointer;
     background-color: var(--light1);
   }
-  .blue-link a {
-    color: var(--lightdarkblue)
-  }
   
   .btn-text {
     color: var(--dark0);
     font-weight: 700;
     font-size: 24px;
   }
+
+  .skill-list {
+    
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--light1);
+    border-radius: 8px;
+  }
+  .mid-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .qualifications {
+    max-width: 90%;
+  }
+  p.extra-details {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+  }
+  .programming-language {
+    /* font-style: italic; */
+    color: var(--lightblue);
+  }
+  .programming-library {
+    /* font-style: italic; */
+    color: var(--lightblue);
+  }
+
 
   
