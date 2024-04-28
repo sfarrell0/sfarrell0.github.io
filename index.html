@@ -37,7 +37,8 @@
                 <br />
                 <p>
                     Hey, I'm Sam Farrell. <br />
-                    I'm a 22 year old CS graduate from the University of Utah. I'm enthusiastic about Machine Learning, NLP, and Computer Vision. 
+                    I'm a 22 year old CS graduate from the University of Utah. I'm enthusiastic about algorithms, 
+                    natural language processing, and computer vision. I am actively learning more about web development on the side as well. 
                     I love building applications and furthering my knowledge by picking up new technologies and libraries.  
                     <br>
                     Much of my work to date has been in Python; whether through my coursework, 
@@ -73,10 +74,12 @@
         </header>
         <header id="skills">
             <div class="skill-box">
-                <h1>Skills & Qualifications</h1>
+                <h1>Experience, Skills, and Qualifications</h1>
             </div>
             
             <div class="switch__container">
+                <a onclick="skillSwitch('work')" id="lang-switch"><div class="btn-text">Work</div></a>
+                <a onclick="skillSwitch('projects')" id="lang-switch"><div class="btn-text">Projects</div></a>
                 <a onclick="skillSwitch('lang')" id="lang-switch"><div class="btn-text">Languages</div></a>
                 <a onclick="skillSwitch('lib')" id="lib-switch"><div class="btn-text">Libraries</div></a>
                 <a onclick="skillSwitch('math')" id="math-switch"><div class="btn-text">Math+Algs</div></a>
@@ -85,6 +88,58 @@
         </header>
 
         <header id="skills-header">
+            <div class="skill-list" id="work" hidden>
+                <h2 class="mid-header">Professional Experience</h2>
+                <div class="job"> 
+                    <h3 class="employer">Air Force Research Lab </h3>
+                    <p class="position">Research Assistant, July 2023 - present</p>
+                    <ul class="job-desc">
+                        <li>Working on a computer vision research project using object recognition and tracking.</li>
+                        <li>Developed a Python submodule to interface with Microsoft's AirSim environment.</li>
+                        <li>Developed a Python submodule to manage simulation of vehicles on procedurally generated road graph networks.</li>
+                        <li>Using OpenCV, YOLOv8, and SUMO (Simulation of Urban MObility)</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3 class="employer">University of Utah, College of Engineering</h3>
+                    <p class="position">Teaching Assistant, Jan 2022 - May 2022</p>
+                    <ul class="job-desc">
+                        <li>Presented 3 weekly lab sections and offered one-on-one help in office hours.</li>
+                        <li>Graded and provided feedback on ~40 student assignments per week and responded to questions on the course forums.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3 class="employer">Juni Learning</h3>
+                    <p class="position">Remote Instructor, May 2021 - Jan 2022</p>
+                    <ul class="job-desc">
+                        <li>Taught Python, Java, and USACO problem-solving to students in grades 5-12 over Zoom</li>
+                        <li>Managed session notes and tracked learning targets for several recurring students.</li>
+                        <li>Created supplementary curriculum for students who needed additional help.</li>
+                    </ul>
+                </div>
+                <!-- <div class="job">
+                    <h3 class="employer"> </h3>
+                    <p class="position"></p>
+                    <ul class="job-desc">
+                        <li></li>
+                    </ul>
+                </div> -->
+                
+            </div>
+            <div class="skill-list" id="projects" hidden>
+                <h2 class="mid-header">University & Side Projects</h2>
+                <div class="project">
+                    <h3 class="project-name">Local Lookout</h3>
+                    <p class="project-subheading">Python, C#, React --- Aug 2023 - April 2024</p>
+                    <ul class="project-desc">
+                        <li> Worked as one of 4 students on a DIY home security system for a year-long senior
+                            capstone project.</li>
+                        <li> Used OpenCV and YOLOv8 for motion detection and object recognition.</li>
+                        <li>Used feature embeddings to create a dynamic face classification system with PyTorch.</li>
+                        <li>Wrote a setup wizard in Python using PyQt</li>
+                    </ul>
+                </div>
+            </div>
             
             <div class="skill-list" id="lang">
                 <h2 class="mid-header">Language Proficiency</h2>
@@ -92,7 +147,7 @@
                 <p class="extra-details">*total experience includes university + H.S. coursework and side projects</p>
                 <br>
                 <div class="qualifications">
-                    <ul>
+                    <ul class="languages">
                         <li> <span class="programming-language">Python: </span> 7 yrs experience (1 yr professional exp @ AFRL)</li>                        
                         <li> <span class="programming-language">Java: </span> 2 yrs experience (AP Computer Science A, CS 1410 + CS 1420)</li>
                         <li> <span class="programming-language">C#: </span> 1 yr experience (Software Practice I, Database Systems)</li>
@@ -111,14 +166,21 @@
                 <p class="extra-details">*total experience includes university coursework and side projects</p>
                 <br>
                 <div class="qualifications">
-                    <ul>
+                    <h2 class="library-language">Python</h2>
+                    <ul class="libraries">
 
                         <li> <span class="programming-library">NumPy: </span> 3 yrs experience (Data Wrangling, Computer Vision, NLP) (1 yr professional exp @ AFRL)</li>
                         <li> <span class="programming-library">PyTorch: </span> 1.5 yrs experience (Deep Learning, Computer Vision, NLP) (0.5 yr professional exp @ AFRL)</li>
-                        <li> <span class="programming-library">OpenCV: </span> 1.5 yrs experience (Capstone project, Computer Vision) (1 yr professional exp @ AFRL)</li>
+                        <li> <span class="programming-library">OpenCV: </span> 1.5 yrs experience (Local Lookout, Computer Vision) (1 yr professional exp @ AFRL)</li>
+                        <li> <span class="programming-library">PyQt: </span> 0.5 yrs experience (Local Lookout)</li>
                         <li> <span class="programming-library">Django: </span> 0.5 yrs experience (YouTube tutorial series)</li>
 
 
+
+                    </ul>
+                    <h2 class="library-language">C++</h2>
+                    <ul class="libraries">
+                        <li> <span class="programming-library">Qt: </span> 0.5 yrs experience (Software Practice II)</li>
                     </ul>
                 </div>
             </div>
@@ -126,8 +188,8 @@
                 <h2 class="mid-header">Math + Algorithms Experience</h2>
                 <br>
                 <div class="qualifications">
-                    <ul>
-                        <li> #27/350 at the 2023 Lucid Programming Contest, Solving 11 of 17 problems over 4 hours(<a class="blue-link" href="https://www.hackerrank.com/contests/lpc-2023/leaderboard/3">Standings</a>)</li>
+                    <ul class="mathquals">
+                        <li> #27/350 at the 2023 Lucid Programming Contest, Solving 11 of 17 problems over 4 hours (<a class="blue-link" href="https://www.hackerrank.com/contests/lpc-2023/leaderboard/3">Standings</a>)</li>
                         <li> Earned an A- in CS 5150: Advanced Algorithms (a graduate-level course), as well as the highest score on the final exam (78/80).</li>
                         <li> Various mathematics achievements including 3x AIME qualification and 3x Top 5 placements @ Utah State Math Contest from 2016-2020</li>
                         <li> Kattis (similar to LeetCode) profile: <a class="blue_link" href="https://open.kattis.com/users/sfarrell0">link</a> </li>

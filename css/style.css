@@ -6,8 +6,10 @@
     --dark0: #3c1238;
     --dark1: #552150;
     /*lights*/
+    --light-1: #c0cbd9;
     --light0: #d7dde6;
     --light1: #ebeef3;
+    
     /*Accent*/
     --lightblue: #88c0d0;
     --lightgrayblue: #81a1c1;
@@ -34,7 +36,7 @@
     justify-content: space-between;
     background-color: var(--light1);
     margin: auto;
-    margin-top: 80px;
+    margin-top: 40px;
     border-radius: 8px;
     padding: 1rem;
     width: 95%;
@@ -45,7 +47,7 @@
     margin: auto;
   }
   #name_header {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;
@@ -184,25 +186,105 @@
     font-size: 2rem;
     text-align: center;
   }
+  .job {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--light-1);
+    border-radius: 8px;
+  }
+  
+  .employer {
+    font-size: 24px;
+    /* text-decoration: underline; */
+  }
+  .job-desc {
+    padding-left: 2rem;
+    
+  }
+  .position {
+    font-style: italic;
+  }
+  .job-desc li {
+    list-style: disc;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .project {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--light-1);
+    border-radius: 8px;
+  }
+  
+  .project-name {
+    font-size: 24px;
+    /* text-decoration: underline; */
+  }
+  .project-desc {
+    padding-left: 2rem;
+    
+  }
+  .project-subheading {
+    font-style: italic;
+  }
+  .project-desc li {
+    list-style: disc;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+
+  
   a {
     text-decoration: underline;
   }
-  .qualifications {
+  /* .qualifications {
     max-width: 90%;
-  }
+  } */
   p.extra-details {
     text-align: center;
     font-style: italic;
     color: gray;
   }
+  .library-language {
+    color: var(--lightdarkblue);
+    text-decoration: underline
+  }
+  .libraries {
+    padding-left: 2rem;
+    margin: 0.2rem;
+    
+  }
+  .libraries li {
+    padding: 0;
+    margin: 0.3rem;
+  }
+  .languages {
+    padding-left: 2rem
+  }
+
   .programming-language {
     /* font-style: italic; */
-    color: var(--lightblue);
+    color: var(--lightdarkblue);
   }
   .programming-library {
     /* font-style: italic; */
     color: var(--lightblue);
   }
 
+  .mathquals {
+    padding-left: 2rem
+  }
 
   
