@@ -1,13 +1,112 @@
 <html>
     <head>
         <title>Sam Farrell</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="scripts/index.js"></script>
     </head>
     <body>
-        <h1>Sam Farrell</h1>
-        <h2>University of Utah '24, Computer Science Major, Math Minor</h2>
-        <p> Hey, I'm Sam Farrell. I'm a recent CS graduate from the University of Utah. I'm enthusiastic about Machine Learning, NLP, and Computer Vision. 
-            I love building applications and furthering my knowledge by picking up new technologies and libraries.  
-            Much of my work to date has been in Python; whether through my coursework, 
-            internship at the Air Force Research Lab, or personal projects. See below for a more comprehensive summary of my experience.</p>
+        <header id="about">
+            <div class="about__container">
+
+              <div class="personal_container">
+                <img src="./images/portrait.png" alt="Headshot" id="picture" />
+                <ul class="media_links">
+                  <li>
+                    <a href="https://www.github.com/sfarrell0"><img src="./images/github.png" alt="GitHub" class="media-image"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/sfarrell0/"><img src="./images/linkedin.png" alt="LinkedIn" class="media-image"></a>
+                  </li>
+                  <li>
+                    <a href="mailto:samfarrell.cs@gmail.com"><img src="./images/email.png" alt="Email" class="media-image"></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="text_blurb">
+                <h1 id="name_header">>Sam Farrell</h1>
+                <h4>
+                    University of Utah '24, Computer Science Major, Math Minor
+                </h4>
+                <br />
+                <p>
+                    Hey, I'm Sam Farrell. <br />
+                    I'm a 22 year old CS graduate from the University of Utah. I'm enthusiastic about Machine Learning, NLP, and Computer Vision. 
+                    I love building applications and furthering my knowledge by picking up new technologies and libraries.  
+                    <br>
+                    Much of my work to date has been in Python; whether through my coursework, 
+                    my internship at the Air Force Research Lab, or personal projects. <br>
+                    See below for a more comprehensive summary of my experience.
+                </p>
+                <br />
+                <h3 id="edu-header">Education</h3>
+                <ul class="education">
+                  <li>
+                    <p>
+                      <span class="utah">University of Utah</span> - BS, Computer Science
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                        <span class="utah">University of Utah</span> - Minor, Mathematics
+                    </p>
+                  </li>
+                </ul>
+                <br />
+                <h3 id="int-header">Interests</h3>
+                <ul class="interests">
+                  <li>Machine Learning</li>
+                  <li>Natural Language Processing</li>
+                  <li>Computer Vision</li>
+
+                </ul>
+              </div>
+
+            </div>
+        </header>
+        <header id="skills">
+            <div class="skill-box">
+                <h1>Skills & Qualifications</h1>
+            </div>
+            
+            <div class="switch__container">
+                <a onclick="skillSwitch('math')" id="math-switch"><div class="btn-text">Technical</div></a>
+                <a onclick="skillSwitch('lang')" id="lang-switch"><div class="btn-text">Languages</div></a>
+                <a onclick="skillSwitch('lib')" id="lib-switch"><div class="btn-text">Libraries</div></a>
+            </div>
+        </header>
+
+        <header id="skills-header">
+            <div class="skill-list" id="math">
+                <h2>Technical Skill</h2>
+                <ul>
+                    <li> Earned an A- in CS 5150: Advanced Algorithms</li>
+                    <li> #27/350 at the 2023 Lucid Programming Contest, Solving 11 of 17 problems (<a class="blue-link" href="https://www.hackerrank.com/contests/lpc-2023/leaderboard/3">Standings</a>)</li>
+                    <li> Various mathematics achievements including 3x AIME qualification and 3x Top 5 placements @ Utah State Math Contest from 2016-2020</li>
+                    <li> Kattis (similar to LeetCode) profile: <a class="blue-link" href="https://open.kattis.com/users/sfarrell0">link</a> </li>
+                </ul>
+                
+            </div>
+            <div class="skill-list" id="lang" hidden>
+                <p> PyTorch</p>
+            </div>
+            <div class="skill-list" id="lib" hidden>
+                <p> NLP</p>
+            </div>
+        </header>
+
+        <header id="experience">
+
+        </header>
+
+        <header id="projects">
+
+        </header>
     </body>
-</html>>
+</html>

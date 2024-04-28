@@ -1,0 +1,260 @@
+:root {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 500;
+    font-style: normal;
+    /*darks*/
+    --dark0: #3c1238;
+    --dark1: #552150;
+    /*lights*/
+    --light0: #d7dde6;
+    --light1: #ebeef3;
+    /*Accent*/
+    --lightblue: #88c0d0;
+    --lightgrayblue: #81a1c1;
+    --lightdarkblue: #5e81ac;
+    --uofu: #bf616a;
+
+  }
+  
+  body {
+    background-color: var(--nord5);
+  }
+  
+  * {
+    color: var(--nord0);
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--nord2);
+    opacity: 0.95;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .nav-links {
+    align-self: center;
+    display: flex;
+    margin-right: 1rem;
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    color: var(--nord6);
+    padding: 2rem;
+    font-weight: 600;
+  }
+  
+  
+  #edu-link:hover {
+    color: var(--nord7);
+  }
+  
+  #about-link:hover {
+    color: var(--nord8);
+  }
+  
+  #project-link:hover {
+    color: var(--nord9);
+  }
+  
+  #home-link:hover {
+    color: var(--nord10);
+  }
+  
+  /*About page*/
+  
+  h1 {
+    color: var(--nord0);
+  }
+  
+  h2 {
+    color: var(--nord1);
+  }
+  
+  h3 {
+    color: var(--nord2);
+  }
+  
+  h4 {
+    color: var(--nord3);
+  }
+  
+  p {
+    color: var(--nord3);
+    margin-left: 1.5rem;
+  }
+  
+  .about__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nord4);
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 95%;
+  }
+  
+  .personal_container {
+
+    margin: auto;
+  }
+  #name_header {
+    font-size: 5rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .interests {
+    padding-left: 2rem;
+  }
+  
+  .interests li {
+    list-style: disc;
+  }
+  
+  #picture {
+    width: 700px;
+    border: solid 4px var(--lightblue);
+    border-radius: 50%;
+    margin: 2rem;
+  }
+  
+  .text_blurb {
+    margin: auto;
+    font-size: 1.5rem;
+    max-width: 800px;
+    padding: 1rem;
+  }
+  
+  .utah {
+    font-weight: bold;
+    color: var(--uofu);
+  }
+  
+  .bold_text2 {
+    font-weight: 800;
+    color: var(--high2);
+  }
+  
+  .media_links {
+    display: flex;
+    margin: auto;
+    font-size: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  
+  .media-image{
+    width: 60px;
+  }
+  
+  .media-image:hover{
+    filter: brightness(150%);
+  }
+  
+  .media_links li {
+    padding-right: 1rem;
+  }
+  
+  /*medium screen*/
+  @media screen and (max-width: 1200px) {
+    .about__container {
+      flex-direction: column;
+    }
+  }
+  
+  /*small screen*/
+  @media screen and (max-width: 800px) {
+    #picture {
+      width: 80vw;
+    }
+  }
+  
+  /* Skills */
+  #skills {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: var(--nord4);
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .skill-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #skill__container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+  }
+  
+  
+  
+  /* .skill-list {
+    -webkit-column-count: 2; /* Chrome/Opera, Safari */
+    -moz-column-count: 2; /* Mozilla Firefox */
+    column-count: 2;
+  
+    /* Properties below are optional: */
+    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
+    -moz-column-gap: 50px; /* Mozilla Firefox */
+    column-gap: 50px;
+  
+    -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
+    -moz-column-rule: 1px single grey; /* Mozilla Firefox */
+    column-rule: 1px single grey;
+  } */
+  
+  .skill-list li {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    list-style: disc;
+  }
+  
+  .switch__container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .switch__container a {
+    margin: 1rem;
+    margin-top: 0;
+    width: 160px;
+    height: 60px;
+    background-color: var(--light0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px var(--lightblue);
+    border-radius: 80px;
+  }
+  .switch__container a:hover {
+    cursor: pointer;
+    background-color: var(--light1);
+  }
+  .blue-link a {
+    color: var(--lightdarkblue)
+  }
+  
+  .btn-text {
+    color: var(--dark0);
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  
