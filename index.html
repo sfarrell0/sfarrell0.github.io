@@ -15,7 +15,8 @@
             <div class="about__container">
 
               <div class="personal_container">
-                <img src="./images/portrait.png" alt="Headshot" id="picture" />
+                <!-- <img src="./images/portrait.png" alt="Headshot" id="picture" /> -->
+                <img src="./images/welikehats.jpg" alt="Headshot" id="picture" />
                 <ul class="media_links">
                   <li>
                     <a href="https://www.github.com/sfarrell0"><img src="./images/github.png" alt="GitHub" class="media-image"></a>
@@ -140,6 +141,28 @@
                     </ul>
                 </div>
                 <div class="project">
+                    <h3 class="project-name">VSR Sumo Sim</h3>
+                    <p class="project-subheading">Python, SUMO, TraCI, NumPy, BeautifulSoup --- September 2023 - present</p>
+                    <ul class="project-desc">
+                        <li> Developed a Python submodule to procedurally generate road networks with parking lots, roadside parking, multiple lanes, and traffic lights.</li>
+                        <li> Interfaced with running TraCI road network simulations and used TraCI calls to maintain simulation conditions.</li>
+                        <li> Used multithreading to run network generation on a seperate thread than the main simulation to improve performance.</li>
+                        <li> Used BeautifulSoup for parsing, editing, and sanitization of several XML files that represent generated SUMO networks.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">AirSim Vehicle Tracker</h3>
+                    <p class="project-subheading">Python, NumPy, airsim, YOLOv8 --- July 2023 - September 2023</p>
+                    <ul class="project-desc">
+                        <li> Developed a Python submodule to extract simulated camera footage from a running AirSim simulation.</li>
+                        <li> Used a trained YOLOv8 model to identify vehicles in the footage and outline them with bounding boxes. These bounding boxes
+                            were then projected from camera coordinates to real coordinates in the simulation and aggregated to identify a 
+                            complete representation of all the vehicles in view of any camera.
+                        </li>
+                        <li> Wrote a demo script that displays camera views in a collage and allows for movement of camera position and FOV changes.</li>
+                    </ul>
+                </div>
+                <div class="project">
                     <h3 class="project-name">Django Blog</h3>
                     <p class="project-subheading">Python, Django, HTML --- April 2024 - present</p>
                     <ul class="project-desc">
@@ -190,9 +213,10 @@
                         <li> <span class="programming-library">NumPy: </span> 3 yrs experience (Data Wrangling, Computer Vision, NLP) (1 yr professional exp @ AFRL)</li>
                         <li> <span class="programming-library">PyTorch: </span> 1.5 yrs experience (Deep Learning, Computer Vision, NLP) (0.5 yr professional exp @ AFRL)</li>
                         <li> <span class="programming-library">OpenCV: </span> 1.5 yrs experience (Local Lookout, Computer Vision) (1 yr professional exp @ AFRL)</li>
+                        <li> <span class="programming-library">BeautifulSoup</span> 1.5 yrs experience (1 yr professional exp @ AFRL)</li>
                         <li> <span class="programming-library">PyQt: </span> 0.5 yrs experience (Local Lookout)</li>
                         <li> <span class="programming-library">Django: </span> 0.5 yrs experience (YouTube tutorial series)</li>
-
+                        
 
 
                     </ul>
